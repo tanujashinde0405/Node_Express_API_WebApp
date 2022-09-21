@@ -7,12 +7,17 @@ const users = [
         firstName: "Tanuja",
         lastName: "Shinde",
         age: 23
-    }
+    },
+    {
+        firstName: "Hrishikesh",
+        lastName: "Bawane",
+        age: 25
+    },
 ]
 
 router.get('/', (req, res) => {
-    console.log(users)
-    res.send("Hello!!")
+    console.log(users);
+    res.send("Hello!!");
 });
 
 export default router;
