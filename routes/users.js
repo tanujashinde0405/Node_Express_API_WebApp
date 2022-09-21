@@ -18,6 +18,7 @@ const users = [
 router.post('/', (req, res) => {
     console.log("post request");
     console.log("inserting an user..!")
+    res.send("Hello from post!!");
 })
 
 router.get('/', (req, res) => {
