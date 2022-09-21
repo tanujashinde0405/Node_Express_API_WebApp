@@ -15,6 +15,10 @@ const users = [
     },
 ]
 
+router.post('/', (req, res) => {
+    console.log("post request")
+})
+
 router.get('/', (req, res) => {
     console.log(users);
     res.send("Hello!!");
