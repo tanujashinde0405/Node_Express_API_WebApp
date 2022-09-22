@@ -36,15 +36,9 @@ router.patch('/:id', (req, res) => {
     const { firstName, lastName, age } = req.body;
     const user = users.find((user) => user.id === id);
 
-    if (firstName){
-        user.firstName = firstName;
-    }
-    if (lastName){
-        user.lastName = lastName;
-    }
-    if (age){
-        user.age = age;
-    }
+    if (firstName) user.firstName = firstName;
+    if (lastName) user.lastName = lastName;
+    if (age) user.age = age;
     res.send(`user with ID ${id} has been updated in the database`);
 })
 
